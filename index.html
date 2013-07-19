@@ -4,18 +4,35 @@
   <head>
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet" 
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>  
     <style type="text/css">
       body {
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Lato', sans-serif !important;
         background-color:#EEEDE8;
       }
+
+      ul, li{
+        display:block;
+        list-style:none;
+
+      }
+      
+      #menu li{
+        padding-left:25px;
+        padding-right:5px;
+        line-height:20px;
+        display:inline;
+        list-style:none;
+       }
+      
       .container {
         width: 960px;
       }
 
       #main-wrapper{
-        margin-top:120px;
+        margin-top:20px;
 
       } 
 
@@ -29,6 +46,14 @@
         color: #4D4D4D;
       }
 
+      .navbar-inner{
+        padding: 10px 0px 10px 0px;
+      }
+      
+      .navbar a{
+        text-decoration: none;
+      }
+
       .pitch, .section1, .section2, .faq, .footer {
         padding: 10px 0px 10px 0px;
       }
@@ -38,6 +63,10 @@
         width:450px;
         height:300px;
 
+      }
+
+      .span12{
+        width: 100%;
       }
 
       .video, .thermometer, .order, .social {
@@ -67,22 +96,20 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
-        </div>
-        <div class="span1">
-          Blank
-        </div>
-        <div class="span1 about">
-          About
-        </div>
-        <div class="span1">
-          Contact
-        </div>
-        <div class="span7 blank"></div>
+
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="nav-collapse collapse">
+             <ul class='navbar pull-right' id="menu">
+               <li><a href="#" class="">Home</a></li>
+               <li><a href="#" class="">About</a></li>
+               <li><a href="#" class="">Contact</a></li>
+             </ul>
+           </div>
+         </div> 
       </div>
+
+    <div class="container">
       <div id="main-wrapper">
         <div class="row heading">
           <div class="span12">
@@ -110,5 +137,6 @@
           </div>
       </div>
     </div>
+     <script src="http://code.jquery.com/jquery-latest.js"></script>
   </body>
 </html>
