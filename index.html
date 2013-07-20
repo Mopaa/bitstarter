@@ -23,8 +23,14 @@
       
      footer{
       background-color:#000;
-      margin-top: 40px; 
+ 
       text-align: center;   
+     }
+    
+     footer#footer{
+        margin: 40px 0 0 0;
+        padding: 0 0 20px 0; 
+
      }
 
      footer ul{
@@ -50,16 +56,11 @@
 
       #menu li a
       {
-        color:#5F5F5F;
+        color:#fff;
         font-size:16px;
         line-height: 1.5em;
 
       }
-
-      p.lead {
-        padding-top: 15px;
-      }
-
       .navigation {
         position:fixed;
         background-color:#000;
@@ -68,6 +69,19 @@
 
       .navbar-inner{
         padding: 10px 0px 10px 0px;
+      }
+      
+      p{
+        padding:15px;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      p.phold{
+        text-align: center;
+        font-size: 24px;
+        color:#fff;
+        padding: 25% 0 25% 0;
       }
 
       .pitch, .section1, .section2, .faq, .footer {
@@ -133,25 +147,40 @@
         </div> 
        <div class="row-fluid subheading">
           <div class="span12">
-            <p class="lead">Our widgets power your fantasy!</p>
+            <h3 class="lead">Our widgets power your fantasy!</h3>
           </div>
         </div>
           <div class="row-fluid">
-            <div class="span5 prod-box"></div>
-            <div class="span5 offset2 prod-box"></div>
+            <div class="span5 prod-box">
+              <p class="phold">386x300</p>
+            </div>
+            <div class="span5 offset2 prod-box"><p> Our widgets are the tastiest widgets this site of the Rockies!</p></div>
           </div>
 
          <div class="row-fluid">
-            <div class="span5 prod-box"></div>
-            <div class="span5 offset2 prod-box"></div>
+            <div class="span5 prod-box">
+                <p class="phold">386x300</p>
+            </div>
+            <div class="span5 offset2 prod-box">
+              <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. </p>
+            </div>
           </div>
 
          <div class="row-fluid">
-            <div class="span5 prod-box"></div>
-            <div class="span5 offset2 prod-box"></div>
+            <div class="span5 prod-box">
+              <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'? </p>
+
+              <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass. </p>
+
+            </div>
+            <div class="span5 offset2 prod-box">              
+              <p class="phold">386x300</p></div>
           </div>
-        <footer class="container">
-                <div class="row sections">
+        </div>
+
+        <footer class="row-fluid" id="footer">
+          <div class="container">
+                <div class="span12">
                     <div class="span3">
                         <h5 class="footer_header">
                             Paper Arch
@@ -176,6 +205,7 @@
                             <li class="footer_link"><a href="#">This Link</a></li>
                         </ul>
                     </div>
+                  </div>
                   </div>
               </footer>
      <script src="http://code.jquery.com/jquery-latest.js"></script>
